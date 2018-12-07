@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: snPcgiKF05yP+g+sTHSkqQDAi83tE+yFCaSP+eWVdxnIDHKPosfnJs1bLdjkvP18gbOmhj7Wr6sO+froVIISmwRsZteUCAiYJAHTi9DzqueOF4Z8ri3WfStlcwhXDkHDU6wCAGyk5aWqhGRVKpJAcH7S97BUQC2PcRdT+paUuddhrY7dilJQNDRkTypnFy+886NSK/42EIAS3qrbDft8g1Je5Pyo+bpJRUHSTpm324HJPvtuYrcZZpFBGvHfagWQpFhXQ91KjyW017UbqdFDVv5nhq+DBeDZN6ODY2oQSTvPal7FNBwPS99AqQ38ei8It4+rrvveKvXsQTPeH/OXno8e1Amj69SaKjsiBe0jHRKLFbePmo7ODvTugrQNpBNxzlME0wQ/I97trBATKVJCbkvKjS7KQbltch1avnxip3Z50swTR08F0lV9Yhmx2v4lIHpIN+39WJFCHjUJ4mfEp9Vlbd8OVrN9dEmWVKBYL/3xLcgwfomjhPPdziWP/5N8fIJbJQgaukG3FgKx2d8ousvp0brMLukTnlfLKfm/htOOrkUWtBrjpDoQJPh57h9HlTvW+TsMS0S18DmeBkPUN+PHWWkw2qlaxuxBVWoZAqCds/TPtpnlTyvRBULh3FWzPcaNhfvySA0ySvyW0S+8s6ylZxPlHC0pnTruzhaigVE=
+  app: sheltered-garden-66350
+  on:
+    repo: Becca529/react-hot-cold-testing
